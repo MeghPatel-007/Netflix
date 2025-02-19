@@ -13,16 +13,16 @@ body {
 
 .main {
   background-image: url(assets/img/background.jpg);
-  height: 99vh;
+  height: 664px;
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: max(1440px, 100vw);
+  background-size: max(1440px, 40vw);
   padding-top: 10px;
 }
 
 .main .box {
-  height: 99vh;
+  height: 664px;
   opacity: 0.69;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.784);
@@ -32,7 +32,7 @@ body {
 }
 
 .main .box-1 {
-  height: 99vh;
+  height: 664px;
   opacity: 0.69;
   width: 100%;
   background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0), black);
@@ -211,7 +211,7 @@ section.first > div {
 section.first > div :first-child {
   font-size: 40px;
   font-weight: bolder;
-  margin-bottom: 20px;
+  margin: 0 0 10px 0;
 }
 
 section.first > div :nth-child(2) {
@@ -300,7 +300,7 @@ footer {
   color: #e00000;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 1025px) {
+@media screen and (max-width: 1441px) and (min-width: 1025px) {
   .secImg #video-2 {
     top: 1.5vw;
     right: 6vw;
@@ -397,7 +397,9 @@ footer {
   }
   .secImg img {
     right: 16px;
+    width: 44vw;
   }
+  /* ---------------------------------------------------------------------------------> */
   .hero > :first-child,
   .hero > :nth-child(2) {
     font-size: 30px;
@@ -442,26 +444,26 @@ footer {
     max-width: 95vw;
   }
   section.first > div {
-    max-width: 30vw;
-    margin: 0 20px;
+    max-width: 44vw;
+    margin: 0 10px;
   }
   section.first > div :first-child {
     font-size: 22px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
-
+/* ----------------------------------------------------------------------------> */
   section.first > div :nth-child(2) {
     font-size: 12px;
   }
   .secImg #video-2 {
-    top: 2vw;
-    right: 7vw;
-    width: 21vw;
+    top: 3vw;
+    right: 13vw;
+    width: 27vw;
   }
   .secImg #video-1 {
-    top: 5.5vw;
-    right: 4.5vw;
-    width: 25vw;
+    top: 4.5vw;
+        right: 4.5vw;
+        width: 37.5vw;
   }
   .faq h2 {
     text-align: center;
@@ -521,16 +523,14 @@ footer {
     max-width: 50px;
   }
   .secImg #video-1 {
-    position: absolute;
-    top: 4.5vw;
+    top: 5vw;
     right: 4vw;
-    width: 22vw;
+    width: 31vw;
   }
   .secImg #video-2 {
-    position: absolute;
-    top: 2vw;
-    right: 6vw;
-    width: 19vw;
+    top: 3vw;
+    right: 8vw;
+    width: 26vw;
   }
   .email-section {
     margin: 54px 21px 0 21px;
@@ -542,10 +542,6 @@ footer {
   .hero-btn {
     gap: 10px;
     flex-wrap: wrap;
-  }
-  input {
-    padding: 0.8rem 7rem 0.8rem 1rem;
-    font-size: 16px;
   }
   .hero {
     max-width: 80vw;
@@ -586,9 +582,21 @@ footer {
   .questions {
     margin: 10px 0 30px 0;
   }
+  input {
+    padding: 0.8rem 7rem 0.8rem 1rem;
+    font-size: 16px;
+  }
+  .secImg img {
+    right: 2px;
+    width: 40vw;
+  }
+  section.first > div :first-child {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 321px) and (min-width: 0px){
   .secImg #video-1 {
     position: absolute;
     top: 4.5vw;
@@ -699,5 +707,18 @@ footer {
   .faq {
     color: white;
     padding: 14px 2rem 0 2rem;
+  }
+}
+
+
+@media screen and (max-width:384px) and (min-width:384px){
+  input {
+    padding: 0.8rem 7rem 0.8rem 1rem;
+    font-size: 16px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 0 20px 0;
   }
 }
