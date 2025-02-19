@@ -13,16 +13,16 @@ body {
 
 .main {
   background-image: url(assets/img/background.jpg);
-  height: 664px;
+  height: 710px;
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: max(1440px, 40vw);
+  background-size: max(1440px, 100vw);
   padding-top: 10px;
 }
 
 .main .box {
-  height: 664px;
+  height: 710px;
   opacity: 0.69;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.784);
@@ -32,7 +32,7 @@ body {
 }
 
 .main .box-1 {
-  height: 664px;
+  height: 710px;
   opacity: 0.69;
   width: 100%;
   background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0), black);
