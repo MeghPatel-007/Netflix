@@ -1,0 +1,703 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(assets/img/background.jpg);
+  height: 99vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1440px, 100vw);
+  padding-top: 10px;
+}
+
+.main .box {
+  height: 99vh;
+  opacity: 0.69;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.784);
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+
+.main .box-1 {
+  height: 99vh;
+  opacity: 0.69;
+  width: 100%;
+  background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0), black);
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+  height: 62px;
+}
+
+nav .logo {
+  position: relative;
+  z-index: 10;
+  width: 200px;
+}
+
+nav button,
+select {
+  position: relative;
+  z-index: 10;
+}
+
+.select select {
+  padding: 5px 8px 5px 28px;
+}
+
+.btns {
+  display: flex;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 13px;
+}
+
+.select img {
+  position: relative;
+  left: 24px;
+  z-index: 10;
+  width: 16px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  height: calc(100% - 62px);
+  justify-content: center;
+  align-items: center;
+  font-family: "Martel Sans", serif;
+  margin: auto;
+  text-align: center;
+  max-width: 60vw;
+  font-weight: bold;
+}
+
+.hero > :first-child,
+.hero > :nth-child(2) {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.hero > :nth-child(3) {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.hero > :nth-child(4) {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.separation {
+  height: 7px;
+  background-color: #2d2d2d;
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.066);
+  border: 1px solid rgba(255, 255, 255, 0.356);
+  border-radius: calc(0.25rem - 0.0625rem);
+  color: white;
+  cursor: pointer;
+}
+
+select option {
+  color: black;
+}
+
+.btn-red {
+  background: red;
+  color: white;
+  padding: 0.7rem 2rem;
+  font-size: 22px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.btn-red-sm {
+  background: red;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  padding: 1rem 11rem 1rem 1rem;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 90vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  padding: 20px;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg #video-1 {
+  position: absolute;
+  top: 4.5vw;
+  right: 4vw;
+  width: 22vw;
+}
+
+.secImg img {
+  width: 30vw;
+  z-index: 10;
+  position: relative;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+}
+
+section.first > div :first-child {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 20px;
+}
+
+.secImg #video-2 {
+  position: absolute;
+  top: 2vw;
+  right: 6vw;
+  width: 19vw;
+}
+
+.faq {
+  color: white;
+  padding: 14px 5rem 0 5rem;
+}
+
+.faq h2 {
+  text-align: center;
+  margin: 24px 0 44px 0;
+  font-size: 48px;
+}
+
+.faqbox {
+  display: flex;
+  background-color: #2d2d2d;
+  padding: 1.5rem;
+  color: white;
+  max-width: auto;
+  margin: 10px 0;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.faqbox:hover {
+  transition: all 1s ease-out;
+  background-color: rgb(65, 65, 65);
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 40px 0;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.footer-item a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.questions {
+  margin: 40px 0;
+}
+
+.word {
+  margin: 40px 0 60px 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.email-section {
+  text-align: center;
+  margin: 54px 82px 0 82px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  color: white;
+}
+
+.footer a:active{
+  color: #e00000;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+  .secImg #video-2 {
+    top: 1.5vw;
+    right: 6vw;
+    width: 19vw;
+  }
+  .secImg #video-1 {
+    top: 4.5vw;
+    right: 4vw;
+    width: 22vw;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 426px) {
+  .hero > :first-child,
+  .hero > :nth-child(2) {
+    font-size: 32px;
+  }
+  nav .logo {
+    width: 125px;
+  }
+  nav {
+    max-width: 95vw;
+  }
+  .hero {
+    max-width: 65vw;
+  }
+  input {
+    padding: 1rem 4rem 1rem 1rem;
+    font-size: 16px;
+  }
+  .hero-btn {
+    gap: 10px;
+  }
+  .btn-red {
+    padding: 0.7rem 1rem;
+    font-size: 20px;
+  }
+  section.first > div {
+    max-width: 30vw;
+    margin: 0 20px;
+  }
+
+  section.first > div :first-child {
+    font-size: 22px;
+  }
+
+  section.first > div :nth-child(2) {
+    font-size: 12px;
+  }
+  .secImg img {
+    width: 34vw;
+    z-index: 10;
+    position: relative;
+  }
+  .secImg #video-2 {
+    top: 2vw;
+    right: 3vw;
+    width: 21vw;
+  }
+  .secImg #video-1 {
+    position: absolute;
+    top: 5.5vw;
+    right: 0.5vw;
+    width: 25vw;
+  }
+  .faq h2 {
+    text-align: center;
+    margin: 14px 0 34px 0;
+    font-size: 34px;
+  }
+  .faqbox {
+    padding: 1.5rem;
+    font-size: 18px;
+  }
+  .faq {
+    padding: 14px 2.5rem 0 2.5rem;
+  }
+  footer {
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 90vw;
+    margin: auto;
+    padding: 30px;
+  }
+  .hero-btn {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 426px) and (min-width: 376px) {
+  .select select {
+    padding: 5px 8px 5px 28px;
+    max-width: 50px;
+  }
+  .secImg img {
+    right: 16px;
+  }
+  .hero > :first-child,
+  .hero > :nth-child(2) {
+    font-size: 30px;
+  }
+  .hero > :nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .hero > :nth-child(4) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  nav .logo {
+    width: 125px;
+  }
+  .separation {
+    height: 5px;
+  }
+  nav {
+    max-width: 95vw;
+  }
+  .hero {
+    max-width: 90vw;
+  }
+  input {
+    padding: 0.8rem 11rem 0.8rem 1rem;
+    font-size: 16px;
+  }
+  .hero-btn {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .btn-red {
+    padding: 0.7rem 1rem;
+    font-size: 20px;
+  }
+  .first {
+    padding: 20px 0;
+    max-width: 95vw;
+  }
+  section.first > div {
+    max-width: 30vw;
+    margin: 0 20px;
+  }
+  section.first > div :first-child {
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+
+  section.first > div :nth-child(2) {
+    font-size: 12px;
+  }
+  .secImg #video-2 {
+    top: 2vw;
+    right: 7vw;
+    width: 21vw;
+  }
+  .secImg #video-1 {
+    top: 5.5vw;
+    right: 4.5vw;
+    width: 25vw;
+  }
+  .faq h2 {
+    text-align: center;
+    margin: 14px 0 34px 0;
+    font-size: 34px;
+  }
+  .faqbox {
+    padding: 1.5rem;
+    font-size: 18px;
+  }
+  .faq {
+    padding: 14px 2rem 0 2rem;
+  }
+  footer {
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 90vw;
+    margin: auto;
+    padding: 30px;
+  }
+  .email-section {
+    margin: 54px 21px 0 21px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 0;
+  }
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px 0;
+  }
+  .questions {
+    margin: 10px 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 376px) and (min-width: 321px) {
+  .hero > :first-child,
+  .hero > :nth-child(2) {
+    font-size: 30px;
+  }
+  .hero > :nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .hero > :nth-child(4) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .select select {
+    padding: 5px 8px 5px 28px;
+    max-width: 50px;
+  }
+  .secImg #video-1 {
+    position: absolute;
+    top: 4.5vw;
+    right: 4vw;
+    width: 22vw;
+  }
+  .secImg #video-2 {
+    position: absolute;
+    top: 2vw;
+    right: 6vw;
+    width: 19vw;
+  }
+  .email-section {
+    margin: 54px 21px 0 21px;
+  }
+  .faq {
+    color: white;
+    padding: 14px 2rem 0 2rem;
+  }
+  .hero-btn {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  input {
+    padding: 0.8rem 7rem 0.8rem 1rem;
+    font-size: 16px;
+  }
+  .hero {
+    max-width: 80vw;
+  }
+  section.first > div :first-child {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  section.first > div :nth-child(2) {
+    font-size: 8px;
+  }
+  nav .logo {
+    width: 115px;
+  }
+  nav {
+    max-width: 90vw;
+  }
+  .faq h2 {
+    margin: 14px 0 34px 0;
+    font-size: 24px;
+  }
+  .faqbox {
+    padding: 1rem;
+    font-size: 12px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 0 20px 0;
+  }
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px 0;
+  }
+  .questions {
+    margin: 10px 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .secImg #video-1 {
+    position: absolute;
+    top: 4.5vw;
+    right: 4vw;
+    width: 22vw;
+  }
+  .secImg #video-2 {
+    position: absolute;
+    top: 2vw;
+    right: 6vw;
+    width: 19vw;
+  }
+  .hero-btn {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  input {
+    padding: 0.8rem 7rem 0.8rem 1rem;
+    font-size: 16px;
+  }
+  .hero {
+    max-width: 80vw;
+  }
+  section.first > div :first-child {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  section.first > div :nth-child(2) {
+    font-size: 8px;
+  }
+  nav .logo {
+    width: 115px;
+  }
+  nav {
+    max-width: 90vw;
+  }
+  .faq h2 {
+    margin: 14px 0 34px 0;
+    font-size: 24px;
+  }
+  .faqbox {
+    padding: 1rem;
+    font-size: 12px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 0 20px 0;
+  }
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px 0;
+  }
+  .questions {
+    margin: 10px 0 30px 0;
+  }
+  .hero > :first-child,
+  .hero > :nth-child(2) {
+    font-size: 30px;
+  }
+  .hero > :nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .hero > :nth-child(4) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .faqbox {
+    padding: 1rem;
+    font-size: 12px;
+  }
+  footer {
+    padding: 30px 0;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 0 20px 0;
+  }
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px 0;
+  }
+  .email-section {
+    margin: 54px 21px 0 21px;
+  }
+  .hero-btn {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  input {
+    padding: 0.8rem 5rem 0.8rem 1rem;
+    font-size: 16px;
+  }
+  .select select {
+    padding: 5px 8px 5px 28px;
+    max-width: 50px;
+  }
+  .faq {
+    color: white;
+    padding: 14px 2rem 0 2rem;
+  }
+}
