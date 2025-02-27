@@ -158,6 +158,11 @@ select option {
   padding: 5px 10px;
 }
 
+.btn-red-sm a{
+  text-decoration: none;
+  color: white;
+}
+
 input {
   padding: 1rem 11rem 1rem 1rem;
   font-size: 16px;
@@ -236,19 +241,7 @@ section.first > div :nth-child(2) {
   font-size: 48px;
 }
 
-.faqbox {
-  display: flex;
-  background-color: #2d2d2d;
-  padding: 1.5rem;
-  color: white;
-  max-width: auto;
-  margin: 10px 0;
-  justify-content: space-between;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-.faqbox:hover {
+.button:hover{
   transition: all 1s ease-out;
   background-color: rgb(65, 65, 65);
 }
@@ -272,7 +265,7 @@ footer {
   gap: 23px;
 }
 
-.footer-item a {
+.questions a,.footer-item a {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -311,6 +304,7 @@ footer {
     right: 4vw;
     width: 22vw;
   }
+  
 }
 
 @media screen and (max-width: 769px) and (min-width: 426px) {
@@ -371,10 +365,6 @@ footer {
     margin: 14px 0 34px 0;
     font-size: 34px;
   }
-  .faqbox {
-    padding: 1.5rem;
-    font-size: 18px;
-  }
   .faq {
     padding: 14px 2.5rem 0 2.5rem;
   }
@@ -399,7 +389,6 @@ footer {
     right: 16px;
     width: 44vw;
   }
-  /* ---------------------------------------------------------------------------------> */
   .hero > :first-child,
   .hero > :nth-child(2) {
     font-size: 30px;
@@ -451,7 +440,6 @@ footer {
     font-size: 22px;
     margin-bottom: 10px;
   }
-/* ----------------------------------------------------------------------------> */
   section.first > div :nth-child(2) {
     font-size: 12px;
   }
@@ -469,10 +457,6 @@ footer {
     text-align: center;
     margin: 14px 0 34px 0;
     font-size: 34px;
-  }
-  .faqbox {
-    padding: 1.5rem;
-    font-size: 18px;
   }
   .faq {
     padding: 14px 2rem 0 2rem;
@@ -564,10 +548,6 @@ footer {
     margin: 14px 0 34px 0;
     font-size: 24px;
   }
-  .faqbox {
-    padding: 1rem;
-    font-size: 12px;
-  }
   .footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -638,10 +618,6 @@ footer {
     margin: 14px 0 34px 0;
     font-size: 24px;
   }
-  .faqbox {
-    padding: 1rem;
-    font-size: 12px;
-  }
   .footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -670,10 +646,6 @@ footer {
   .hero > :nth-child(4) {
     font-size: 16px;
     margin-bottom: 10px;
-  }
-  .faqbox {
-    padding: 1rem;
-    font-size: 12px;
   }
   footer {
     padding: 30px 0;

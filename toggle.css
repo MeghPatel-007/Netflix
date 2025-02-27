@@ -1,0 +1,100 @@
+.check-moreInfo{
+    visibility: hidden;
+    position: absolute;
+}
+
+.button{
+    position: relative;
+    height: 4.5rem;
+    z-index: 0;
+    width: 100vw;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.que > span{
+    position: absolute;
+}
+
+.que > svg {
+    position: absolute;
+    left: 88vw;
+}
+
+.que span{
+    margin-left: 1.5rem;
+}
+
+.rotate{
+    transform: rotate(45deg);
+}
+.unrotate{
+    transform: rotate(0deg);
+}
+.que{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+.ans{
+    font-size: 16px;
+    padding: 1rem 1.5rem;
+    display: none;
+    background-color: #2d2d2d;
+    border-top: 1px solid black;
+}
+
+.ans  div {
+    margin: 1rem 0;
+}
+
+.open{
+    display: block;
+}
+
+.close{
+    display: none;
+}
+
+@media screen and (max-width: 1441px) and (min-width: 1025px) {
+    .que > svg {
+        position: absolute;
+        left: 91vw;
+    }
+}
+
+@media screen and (max-width: 769px) and (min-width: 426px) {
+    .que > svg {
+        position: absolute;
+        left: 88vw;
+    }
+}
+@media screen and (max-width: 426px) and (min-width: 376px) {
+    .que > svg {
+        position: absolute;
+        left: 83vw;
+    }
+}
+
+@media screen and (max-width: 376px) and (min-width: 321px) {
+    .que > svg {
+        position: absolute;
+        left: 81vw;
+    }
+}
+
+@media screen and (max-width: 321px) and (min-width: 0px) {
+    .que > svg {
+        position: absolute;
+        left: 81vw;
+    }
+}
+@media screen and (max-width:384px) and (min-width:384px) {
+    .que > svg {
+        position: absolute;
+        left: 82vw;
+    }
+}
