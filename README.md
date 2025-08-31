@@ -24,4 +24,4 @@ This project was created to practice frontend development and UI design.
 ## 💻 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/MeghPatel-007/netflix-clone.git
+   git clone https://github.com/MeghPatel-007/Netflix.git
